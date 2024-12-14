@@ -1,11 +1,11 @@
-const http = require(http)
+const http = require('http')
         const port = 3000
-        const server = http.createserver(function(req,res){
+        const server = http.createServer(function(req,res){
 
         })
-        server.listesn(port, function(err){
+        server.listen(port, function(error){
             if(error){
-                console.log("something went wrong")
+                console.log("something went wrong",error)
             }
             else{
                 console.log("server is listening on port", + port)
